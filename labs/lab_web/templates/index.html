@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Home page</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="static/style.css">
+	</head>
+
+	<body>
+		My name is Askar, I am 21 years old.
+		
+		<form method="post" action="{{ url_for('hobby') }}">
+			<label for="hobby">Hobby</label>
+			<textarea name="hobby" id="hobby" required></textarea>
+			<input type="submit" value="Send">
+		</form>
+		
+		
+		My hobby is	{{ hobby }}.
+		
+
+	</body>
+
+</html>
